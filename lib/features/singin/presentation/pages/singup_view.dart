@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:new_recipe_app/core/client.dart';
 import 'package:new_recipe_app/features/singin/data/repositories/auth_repository.dart';
+import 'package:new_recipe_app/features/singin/presentation/widgets/app_bar.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../core/utils/app_colors.dart';
@@ -24,14 +25,7 @@ class SingupView extends StatelessWidget {
         return Scaffold(
           appBar: AppBar(
             centerTitle: true,
-            title: Text(
-              'Sing Up',
-              style: TextStyle(
-                color: AppColors.ReddishPink,
-                fontWeight: FontWeight.w600,
-                fontSize: 20,
-              ),
-            ),
+            title: appBarTitle(text: 'Sing In')
           ),
           body: ListView(
             padding: EdgeInsets.only(bottom: 50),
@@ -115,7 +109,7 @@ class SingupView extends StatelessWidget {
                                 child: Column(
                                   children: [
                                     Text(
-                                      'Sign up succesful!',
+                                      'Sign up successful!',
                                       style: TextStyle(
                                         color: Colors.black,
                                         fontSize: 20,

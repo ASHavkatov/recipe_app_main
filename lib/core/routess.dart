@@ -7,4 +7,5 @@ class Routes{
   static const  categories = '/categories';
   static const singup = '/singup';
   static const categoryDetail = 'categories/:id';
+  static const complateProfile='/complateProfile';
 }

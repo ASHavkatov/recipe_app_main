@@ -15,8 +15,9 @@ class UserModel {
 
   Map<String, dynamic> toJson(UserModel model){
     return{
-      "userName": userName,
-      "fullName": "$firstName, $lastName",
+      "username": userName,
+      "firstName": firstName,
+      "lastName": lastName,
       "email": email,
       "phoneNumber": phoneNumber,
       "birthDate": "${dateOfBirth.year}-${dateOfBirth.month}-${dateOfBirth.day}",

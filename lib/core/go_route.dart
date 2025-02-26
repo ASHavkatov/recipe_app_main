@@ -1,5 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:new_recipe_app/core/routess.dart';
+import 'package:new_recipe_app/features/singin/presentation/pages/complate_profile.dart';
 import '../features/categories/data/repositories/categories_repository.dart';
 import '../features/categories/presentation/manager/categories_view_model.dart';
 import '../features/categories/presentation/pages/categories_page.dart';
@@ -65,6 +66,10 @@ class GoRoutes {
           vm: LoginViewModel(repo: AuthRepository(client: ApiClient())),
         ),
       ),
+      GoRoute(
+        path: Routes.complateProfile,
+        builder:(context, state) => ComplateProfile()
+      )
     ],
   );
 }

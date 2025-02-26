@@ -29,7 +29,7 @@ class SingUpViewModel extends ChangeNotifier {
       userName: userNameController.text,
       email: emailController.text,
       phoneNumber: phoneNumberController.text,
-      dateOfBirth: selectedDate!,
+      dateOfBirth: selectedDate?? DateTime.now(),
       password: passwordController.text,
     );
 }

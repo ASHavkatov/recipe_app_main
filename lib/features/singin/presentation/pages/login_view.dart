@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:new_recipe_app/core/utils/app_colors.dart';
+import 'package:new_recipe_app/features/singin/presentation/widgets/app_bar.dart';
 import '../manager/login_view_model.dart';
 import '../widgets/login_ostki.dart';
 import '../widgets/recipe_elevated_button.dart';
@@ -20,14 +21,7 @@ class LoginView extends StatelessWidget {
         backgroundColor: AppColors.MainColor,
         appBar: AppBar(
           centerTitle: true,
-          title: Text(
-            'Login',
-            style: TextStyle(
-              color: AppColors.ReddishPink,
-              fontWeight: FontWeight.w600,
-              fontSize: 20,
-            ),
-          ),
+          title: appBarTitle(text: 'Log In'),
         ),
         body: ListView(
           padding: EdgeInsets.only(top: 150),
